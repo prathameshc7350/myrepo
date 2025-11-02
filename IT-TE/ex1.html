@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Powers and Square Root</title>
+</head>
+<body>
+  <h2>Compute Powers and Square Root</h2>
+  
+  <script>
+    // Take input from user
+    let num = parseFloat(prompt("Enter a number:"));
+    
+    // Calculate and display powers from 1 to 5
+    document.write("<h3>Powers of " + num + ":</h3>");
+    for (let i = 1; i <= 5; i++) {
+      let power = 1;
+      // compute num^i using loop
+      for (let j = 1; j <= i; j++) {
+        power *= num;
+      }
+      document.write(num + "^" + i + " = " + power + "<br>");
+    }
+
+    // Calculate square root
+    let sqrt = Math.sqrt(num);
+    document.write("<h3>Square Root of " + num + ":</h3>");
+    document.write("√" + num + " = " + sqrt.toFixed(4));
+  </script>
+</body>
+</html>
